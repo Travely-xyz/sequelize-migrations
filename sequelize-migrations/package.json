@@ -1,0 +1,82 @@
+{
+  "_from": "sequelize-migrations",
+  "_id": "sequelize-migrations@2.1.2",
+  "_inBundle": false,
+  "_integrity": "sha512-NkLm+jbRRLRIZnDgcOsAIII94qJh79+dErv3IJc2EpbCmileI/SBrIXNGMrnrsiqlSbtDvlRDh8C1HM7aycNtQ==",
+  "_location": "/sequelize-migrations",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "sequelize-migrations",
+    "name": "sequelize-migrations",
+    "escapedName": "sequelize-migrations",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/sequelize-migrations/-/sequelize-migrations-2.1.2.tgz",
+  "_shasum": "2693c7de440576f8dfa9058b9ef37381721196b1",
+  "_spec": "sequelize-migrations",
+  "_where": "C:\\Users\\Arber\\WebstormProjects\\nodejs-backend-api\\app",
+  "author": {
+    "name": "Michael Maslov & Daler Akhmetov"
+  },
+  "bin": {
+    "makemigration": "bin/makemigration.js",
+    "runmigration": "bin/runmigration.js"
+  },
+  "bugs": {
+    "url": "https://github.com/LuckyTeamX/sequelize-auto-migrations/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "async": "^2.5.0",
+    "command-line-args": "^4.0.6",
+    "deep-diff": "^0.3.8",
+    "js-beautify": "^1.6.14",
+    "lodash": "^4.17.4",
+    "object-hash": "^1.1.8"
+  },
+  "deprecated": false,
+  "description": "Sequelize migrations generator && runner",
+  "devDependencies": {
+    "@types/chai": "^4.2.12",
+    "@types/mocha": "^8.0.3",
+    "chai": "^4.2.0",
+    "mocha": "^8.1.1",
+    "sequelize": "^5.22.3",
+    "sqlite3": "^5.0.0"
+  },
+  "files": [
+    "lib",
+    "bin"
+  ],
+  "homepage": "https://github.com/LuckyTeamX/sequelize-auto-migrations#readme",
+  "keywords": [
+    "sequelize",
+    "migrations",
+    "migration",
+    "database",
+    "db",
+    "sql"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "sequelize-migrations",
+  "peerDependencies": {
+    "sequelize": "^5.22.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuckyTeamX/sequelize-auto-migrations.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "2.1.2"
+}
