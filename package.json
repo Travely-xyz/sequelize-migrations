@@ -32,7 +32,7 @@
     "lib",
     "bin"
   ],
-  "homepage": "https://github.com/Travely-xyz/sequelize-migrations,
+  "homepage": "https://github.com/Travely-xyz/sequelize-migrations",
   "keywords": [
     "sequelize",
     "migrations",
