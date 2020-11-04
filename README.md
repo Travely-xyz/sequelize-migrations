@@ -1,5 +1,5 @@
 # sequelize-migrations
-**works with sequelize@5**
+**Based on sequelize-auto-migrations and includes a few fixes**
 
 Migration generator &amp;&amp; runner for sequelize
 
@@ -8,13 +8,12 @@ This package provide two tools:
 * `runmigration` - tool for apply created by first tool migrations
 
 ## Install
-`npm install sequelize-auto-migrations`
+`npm install github:travely-xyz/sequelize-migrations`
 
 ## Usage
 * Init sequelize, with sequelize-cli, using `sequelize init`
 * Create your models
 * Create initial migration - run:
-
 `node ./node_modules/sequelize-auto-migrations/bin/makemigration --name <migration name>`
 * Change models and run it again, model difference will be saved to the next migration
 
@@ -39,10 +38,8 @@ To create and then execute migration, use:
 For more information, use `makemigration --help`, `runmigration --help`
 
 ## TODO:
+* Add tracking of which revision DB is on.
+* This module tested with MariaDB & MySQL. Needs to be tested with other databases
 * Migration action sorting procedure need some fixes. When many foreign keys in tables, there is a bug with action order. Now, please check it manually (`--preview` option)
 * Need to check (and maybe fix) field types: `BLOB`, `RANGE`, `ARRAY`, `GEOMETRY`, `GEOGRAPHY`
 * Downgrade is not supported, add it
-* This module tested with postgresql (I use it with my projects). Test with mysql and sqlite.
-
-## Bug fix
-* Model's indexes can be updated when model of previous state have no indexes
